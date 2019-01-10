@@ -1,0 +1,322 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "arial";
+}
+
+*:focus{
+    outline: none !important;
+}
+
+section{
+    display: block;
+    height: 100%;
+    width:100%;
+    padding: 60px 0;
+    box-sizing: border-box;
+    overflow: auto;
+    text-align: center;
+}
+
+#HomePage{
+    background: url(../Assets/Images/HomePage.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+#Customiser{
+    background: url(../Assets/Images/WoodBackground.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#Dates{
+    background: url(../Assets/Images/LiveBackground.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#Gallery{
+    background: url(../Assets/Images/WoodBackground.jpg) center;
+}
+
+.NavBar{
+    width: 100%;
+    background-color: #000000;
+    overflow: auto;
+    z-index: 2;
+    position: fixed;
+}
+
+.NavBar a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    width: 25%;
+    text-align: center;
+}
+
+.NavBar a:hover {
+    background-color: #333333
+}
+
+#HomePageContainer{
+    position: relative;
+    margin-top: 350px;
+    width: 50%;
+    background: #000000;
+    display: inline-block;
+}
+
+#HomePageContainer h1{
+    color: #ffffff;
+}
+
+#DatePageContainer{
+    float: right;
+    position: relative;
+    margin: 40px 0;
+    width : 40%;
+    max-height: 80%;
+    background: #000000;
+    text-align: center;
+    margin-right: 100px;
+    overflow: auto;
+    border: #666666 solid 2px;
+    border-radius: 10px;
+}
+
+#DatePageContainer ul{
+    list-style: none;
+}
+
+#DatePageContainer ul li{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#PlayerContainer{
+    width:50%;
+    max-height: 100%;
+    background: #222222;
+    overflow: auto;
+    margin: 60px 5%;
+    border: #666666 solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+}
+
+#PlayListContainer{
+    width:23%;
+    max-height: 100%;
+    background: #222222;
+    overflow: auto;
+    margin: 60px 5%;
+    border: #666666 solid 2px;
+    border-radius: 10px;
+    float: right;
+}
+
+#audio-image{
+	position:relative;
+	overflow:hidden;
+	height:200px;
+	margin-bottom:15px;
+}
+
+.cover{
+    z-index: 1;
+}
+
+#audio-info{
+	text-align:center;
+}
+
+#audio-info .title{
+    font-weight: bold;
+    color:#ffffff;
+}
+
+input#volume {
+	width:95%;
+	margin-left:2%;
+    -webkit-appearance: none !important;
+    background:#cccccc;
+    height:1px;
+	margin-bottom:20px;
+}
+
+input#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:url(../Assets/Images/VolumeKnob.png) no-repeat;
+    height:12px;
+    width:12px;
+}
+
+#buttons{
+	width:90%;
+	display: block;
+    margin: 15px auto;
+    margin-left:23px;
+    overflow-x: scroll;
+    overflow:auto;
+}
+
+img{
+    border: 0;
+}
+
+button#prev{
+	width:70px;
+	height:70px;
+	background:url(../Assets/Images/PreviousButton.png) no-repeat;
+	float:left;
+    margin-top:15px;
+    border: none
+}
+
+button#play{
+	width:70px;
+	height:70px;
+    background:url(../Assets/Images/PlayButton.png) no-repeat;
+    border: none;
+}
+
+button#pause{
+	width:70px;
+	height:70px;
+    background:url(../Assets/Images/PauseButton.png) no-repeat;
+    border: none;
+}
+
+button#stop{
+	width:70px;
+	height:70px;
+    background:url(../Assets/Images/StopButton.png) no-repeat;
+    border: none;
+}
+
+button#next{
+	width:70px;
+	height:70px;
+	background:url(../Assets/Images/NextButton.png) no-repeat;
+	float:right;
+    margin-top:15px;
+    border: none;
+}
+
+#playlist li {
+    cursor: pointer;
+    margin:5px;
+    color:#ffffff;
+}
+
+#playlist li.active {
+    font-weight: bold;
+	padding:3px;
+	background:#666;
+}
+
+#progressbar { 
+    width:80%;
+    margin-left:2%;
+    margin-bottom:20px;
+    margin-top:9px;
+    height:10px;
+    background:url(../Assets/Images/DurationBar.png) no-repeat;
+    float:left;
+}
+
+#progress {
+    background:url(../Assets/Images/DurationBarFull.png) no-repeat;
+    height:10px;
+    display:inline-block;
+    position: absolute;
+    top: 9px;
+    left: 8px
+}
+
+#duration{
+	position:absolute;
+	top:0;
+	right:10px;
+	padding:4px 8px;
+	background:#000;
+    border-radius:5px;
+    color: #ffffff;
+}
+
+#tracker{
+	position:relative;
+	width:100%;
+}
+
+h1{
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width:480px){
+
+    .NavBar a{
+        font-size: 28px;
+        width: 25%;
+        text-align: center;
+    }
+
+    #PlayListContainer{
+        display: none;
+    } 
+
+    #PlayerContainer{
+        width:100%;
+        max-height: 100%;
+        margin: 40px 0;
+        background: #222222;
+        overflow: none;
+        border: #666666 solid 0px;
+        border-radius:0px;
+    }
+
+    #DatePageContainer{
+        padding: 0 0;
+        margin: 0 0;
+        float: none;
+        position: absolute;
+        width : 100%;
+        height: 93%;
+        max-height: 100%;
+        background: #111111;
+        text-align: left;
+        overflow: auto;
+        border: #666666 solid 0px;
+        border-radius:0px;
+    }
+
+    #DatePageContainer h1{
+        text-align: center;
+    }
+    
+    #DatePageContainer ul{
+        list-style: circle;
+    }
+    
+    #DatePageContainer ul li{
+        color: white;
+    }
+
+    #GalleryPic{
+        width: 300px;
+        height:auto;
+    }
+}

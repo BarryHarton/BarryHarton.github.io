@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--Scaling of website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tom Odell</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="JS/jquery.easyui.min.js"></script>
+	<script src="JS/main.js"></script>
+</head>
+
+<body>
+    <div class="NavBar">
+        <a href="#HomePage">Home</a>
+        <a href="#Customiser">Audio Player</a>
+        <a href="#Dates">Tour Dates</a>
+        <a href="#Gallery">Gallery</a>
+    </div>
+
+    <section id="HomePage">
+        <div>
+            <div id="HomePageContainer">
+                <h1>TOM ODELL</h1>
+                <a href="https://www.facebook.com/TomOdellmusic">
+                    <img src="Assets/Images/Facebook.png" style="width: 50px; height:50px; border: 0;">
+                </a>
+                <a href="https://twitter.com/TOMPETERODELL">
+                    <img src="Assets/Images/Twitter.png" style="width: 50px; height:50px; border: 0;">
+                </a>
+                <a href="https://www.instagram.com/tompeterodell/">
+                    <img src="Assets/Images/Instagram.png" style="width: 50px; height:50px; border: 0; outline: none;">
+                </a>
+                <a href="https://www.youtube.com/channel/UCw82hVTqhUUGOQIrGcG8HIw">
+                    <img src="Assets/Images/YouTube.png" style="width: 50px; height:50px; border: 0; outline: none;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Customiser">
+        <div id="PlayerContainer">
+            <div id="audio-image">
+                <img class="cover" />
+            </div>
+            <div id="audio-player">
+                <div id="audio-info">
+                    <span class="title"></span>
+                </div>
+                <input id="volume" type="range" min="0" max="100" value="50">
+                <br>
+                <div id="buttons">
+                    <button id="prev"></button>
+                    <button id="play"></button>
+                    <button id="pause"></button>
+                    <button id="stop"></button>
+                    <button id="next"></button>
+                </div>
+                <div class="clearfix"></div>
+                <div id="tracker">
+                    <div id="progressbar">
+                        <span id="progress"></span>
+                    </div>
+                    <span id="duration"></span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div id="PlayListContainer">
+            <ul id="playlist">
+                <li song="01 - Tom Odell - Grow Old With Me.mp3" cover="cover.jpg">Grow Old With Me</li>
+                <li song="02 - Tom Odell - Hold Me.mp3" cover="cover.jpg">Hold Me</li>
+                <li song="03 - Tom Odell - Another Love.mp3" cover="cover.jpg">Another Love</li>
+                <li song="04 - Tom Odell - I Know.mp3" cover="cover.jpg">I Know</li>
+                <li song="05 - Tom Odell - Sense.mp3" cover="cover.jpg">Sense</li>
+                <li song="06 - Tom Odell - Can't Pretend.mp3" cover="cover.jpg">Can't Pretend</li>
+                <li song="07 - Tom Odell - Till I Lost.mp3" cover="cover.jpg">Till I Lost</li>
+                <li song="08 - Tom Odell - Supposed To Be.mp3" cover="cover.jpg">Supposed To Be</li>
+                <li song="09 - Tom Odell - Long Way Down.mp3" cover="cover.jpg">Long Way Down</li>
+                <li song="10 - Tom Odell - Sirens.mp3" cover="cover.jpg">Sirens</li>
+                <li song="11 - Tom Odell - I Think It's Going To Rain Today.mp3" cover="cover.jpg">I Think It's Going To Rain Today</li>
+                <li song="12 - Tom Odell - Storms.mp3" cover="cover.jpg">Storms</li>
+                <li song="13 - Tom Odell - Heal.mp3" cover="cover.jpg">Heal</li>
+                <li song="14 - Tom Odell - Till I Lost (Demo).mp3" cover="cover.jpg">Till I Lost (Demo)</li>
+                <li song="15 - Tom Odell - Grow Old With Me (Demo).mp3" cover="cover.jpg">Grow Old With Me (Demo)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Dates">
+            <div id="DatePageContainer">
+                <h1>Tour Dates</h1>
+                <ul id = "TourDates">
+                    <li>17/01/19  Hanover, Germany  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>18/01/19  Brussels, Belgium  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>19/01/19  Paris, France  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>21/01/19  Luxembourg District, Luxembourg  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>22/01/19  Munich,Germany  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>23/01/19  Prague, Czech Republic <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>25/01/19  Krakow, Poland  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>26/01/19  Warsaw, Poland  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>28/01/19  Vilnius, Lithuania  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>29/01/19  Riga, Latvia  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>31/01/19  Helsinki, Finland  <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>01/02/19  St. Petersburg, Russia <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>03/02/19  Moscow, Russia <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>05/02/19  Kiev, Ukraine <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>06/02/19  Lviv Oblast, Ukraine <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>08/02/19  Budapest, Hungary <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>09/02/19  Ljubljani, Slovenia <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>10/02/19  Zagreb, Croatia <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>12/02/19  Belgrade, Serbia <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>13/02/19  Skopje, Macedonia <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>15/02/19  Sofia, Bulgaria <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>16/02/19  Bucharest, Romania <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>18/02/19  Istanbul, Turkey <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>17/04/19  Atlanta, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>18/04/19  Chapel Hill, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>19/04/19  Philidelphia, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>20/04/19  Washington, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>23/04/19  New York, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>24/04/19  Boston, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>26/04/19  Montreal, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>27/04/19  Toronto, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>29/04/19  Cleveland, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>30/04/19  Chicago, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>01/05/19  Minneapolis, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>03/05/19  Denver, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>04/05/19  Salt Lake City, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>07/05/19  Los Angeles, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>08/05/19  San Francisco, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>10/05/19  Portland, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>11/05/19  Vancouver, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+                    <li>12/05/19  Seattle, USA <a href="http://tomodell.twickets.live/">Get Tickets</a></li>
+
+                </ul>
+            </div>
+    </section>
+
+    <section id="Gallery">
+        <img src="Assets/Images/Image1.jpg" id="GalleryPic" style="height:250px; border: 0; padding: 20px">
+        <img src="Assets/Images/Image2.jpg" id="GalleryPic" style="height:250px; border: 0; padding: 20px">
+        <img src="Assets/Images/Image3.jpg" id="GalleryPic" style="height:250px; border: 0; padding: 20px">
+        <img src="Assets/Images/Image4.jpg" id="GalleryPic" style="height:250px; border: 0; padding: 20px">     
+        <img src="Assets/Images/Image5.jpg" id="GalleryPic" style="height:250px; border: 0; padding: 20px">
+        <img src="Assets/Images/Image6.jpg" id="GalleryPic" style="height:250px; border: 0; padding: 20px">
+    </section>
+
+    
+</body>
+
+</html>
